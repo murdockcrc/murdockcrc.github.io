@@ -1,0 +1,33 @@
+I"�<p>If you try to access the local disk on Azure Functions for Python, you will be confronted with the following error:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Errno 30] Read-only file system: '/home/site/""wwwroot/""
+</code></pre></div></div>
+
+<p>As you might know from the Docs, Azure Functions for Python actually uses a container image to host your code. This Docker container is abstracted from you (you don’t have to build it or configure it in anyway). However, as a managed serverless platform, Functions does impose certain limitations, and local disk storage is one of them.</p>
+
+<p>In order to access the local disk, you need to fetch the <em>Temp</em> directory on the host, like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import tempfile
+
+import azure.functions as func
+
+def main(msg: func.ServiceBusMessage, outputblob: func.Out[str]):
+    message = msg.get_body().decode('utf-8')
+
+    dir_path = tempfile.gettempdir()
+    // Save and read files on this tmp directory
+    {your I/O code here}
+    return
+</code></pre></div></div>
+
+<p><em>tempfile.gettempdir()</em> will get you a reference to the folder ‘/tmp’, where you can write and read files from.</p>
+
+<p>Keep in mind though, that Functions is conceived as a serverless platform, and you should not depend on local disk access to do any kind of persistence. Whatever you store in that location <strong>will be deleted</strong> on other Function invocations.</p>
+
+<p>In our case, we are using <em>pyplot</em> to create some charts based on IoT data, and we use the  <em>dataframe.to_csv()</em> method to extract some of this data into a file for further analysis. These Python modules expect a path to local disk to save their output. However, our Function will later take these local files and output them to Blob storage.</p>
+
+<p>Summary: if you need to access local disk on your Function app, you can do that using the <em>tmp</em> directory. However, make sure you use local disk as temporary storage, and move those file to blob storage if you need to persist them after your Function invocation.</p>
+
+<p>Happy coding!</p>
+
+:ET

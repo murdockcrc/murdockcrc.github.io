@@ -1,0 +1,48 @@
+I"�<p>I have been spending some time during the last weeks ramping up on NodeJS, just out of personal curiosity. In the process, I’ve built mock up web API’s, which I have hosted in the cloud. Going through this technical ramp up period, I have tried to lay my eyes on every piece of information about NodeJS, and eventually I found <a href="http://modernweb.com/2014/06/23/using-node-js-in-production/">this article</a>. The article is well written and technically accurate. It is not my intention to trash the article or its author, and I merely selected it for illustrative purposes because it embodies highly-specialized knowledge that is obsolete in a cloud-first world.</p>
+
+<p>In a cloud-first world, all the complexities of infrastructure design, setup and maintenance are abstracted away from you and placed within the responsibility of your cloud service provider. I have to confess that, during my experiments with NodeJS, I barely noticed the value of this abstraction. It was not until I read the article referenced above, that it became clear to me how much complexity has been removed from my hands and how valuable that is. Consider the following examples:</p>
+
+<ul>
+  <li>Installing and maintaining the operating system? Done for me.</li>
+  <li>Patching? Someone else does it for me.</li>
+  <li>Scripts to recover the app when it crashes? It’s detected and done for me automatically.</li>
+  <li>Load-balancing? Done.</li>
+  <li>Bandwidth? Unlimited (your wallet is the limit).</li>
+  <li>Scaling under heavy traffic? 2 configuration fields away and it is done.</li>
+  <li>Deploying your code to the server(s)? Done for me in seconds.</li>
+  <li>Continuous integration? Out of the box.</li>
+  <li>A/B testing? Out of the box.</li>
+</ul>
+
+<p>The list is much larger. All the steps I enumerate above are technically complex and important the provide scalability and reliability to your application. It is also much better if someone takes care of them for you. By not having to do any of the above myself, I have saved substantial amounts of time, and so can you and your organization.</p>
+
+<h2 id="upgrading-yourself">Upgrading yourself</h2>
+
+<p>In a cloud-first world, people whose core skillset is the mastering of commodity infrastructure tasks are becoming obsolete. As cloud adoption continues, these skills will cease to be necessary to organizations or all kinds. In the cut-throat, ultra-competitive world we are currently living in, business managers are aggressively pursuing opportunities to reduce costs. In fact, in many mature industries and markets (such as insurance or consumer goods), I argue that the majority of executive plans are focused on cost reduction instead of value creation. As I described in a <a href="http://www.delgado.ms/blog/biztech/2013/06/02/the-tyranny-of-it-is-over/">previous post</a>, the value proposition of cloud services is too compelling for business managers to ignore, even if that means short-circuiting their own IT and procuring services themselves (in what is known as “shadow IT”).</p>
+
+<p>Under these conditions, you will need to upgrade yourself to remain valuable to your organization. I strongly believe that, in the next 3-5 years, these skills will lose relevancy, particularly as adoption of Platform-as-a-Service and Software-as-a-Service increases:</p>
+
+<ul>
+  <li>Network and infrastructure design and maintenance.</li>
+  <li>Hardware capacity sizing.</li>
+  <li>Storage management and sizing.</li>
+  <li>Operating system management.</li>
+  <li>Source control management (the infrastructure side of it).</li>
+</ul>
+
+<p>In contrast, these skills will be in high demand:</p>
+
+<ul>
+  <li>Solution design and architecture.</li>
+  <li>Analytics (both the back-end and visualization sides of it).</li>
+  <li>Development of highly-scalable, mobile-first software.</li>
+  <li>Software integration (specially between different cloud vendors).</li>
+  <li>Cloud Service Brokerage services.</li>
+  <li>Security and identity management.</li>
+  <li>Rapid, agile <a href="http://www.delgado.ms/blog/biztech/2014/01/01/delivering-value-in-small-pieces/">development</a>.</li>
+  <li>Project and Program management.</li>
+</ul>
+
+<p>To all of you infra guys out there: it’s time to move up the food chain into better and greater things, things that offer more value to your organizations. Things that will allow you to unleash your creativity into products and services you yourself can build and realize quicker than ever before. Agree or disagree? Please comment below.</p>
+
+:ET

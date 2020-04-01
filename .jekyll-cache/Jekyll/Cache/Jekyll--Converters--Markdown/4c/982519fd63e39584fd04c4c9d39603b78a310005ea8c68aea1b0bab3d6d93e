@@ -1,0 +1,24 @@
+I"<p>This week during the <a href="https://www.google.co.uk/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjgioSs9tnMAhWBI8AKHXpkDLUQFggdMAA&amp;url=http%3A%2F%2Fwww.biztalk360.com%2Fintegrate-2016%2F&amp;usg=AFQjCNGNdy3-pxRP0wmdIqavJ_piFqlpSw">Integrate 2016 event in London</a>, several Microsoft Product Group members took the stage to provide insights about the Microsoft strategy and roadmap for application integration. We have blogged about these topics <a href="http://www.codit.eu/blog/2016/05/13/integrate-2016-day-2/">here</a> and <a href="http://www.codit.eu/blog/2016/05/12/integrate-2016-day-1/">here</a>.</p>
+
+<p>Upon taking the stage, Clemens Vasters highlighted the importance of adopting AMQP for device telemetry. AMQP is the clear direction being given by Microsoft moving forward. Azure ingestion services support both AMQP and HTTP, but AMQP should be your default go-to choice.</p>
+
+<p>Anyone experienced in what goes under the hood with HTTP on the networking layer knows how tremendously inefficient the protocol is. Let us not forget that HTTP was built and designed to enable the transfer of Hypertext between clients and servers, an operation that is intrinsically one-sided (connections are always originated from the client) and stateless. Real-time, bi-directional communication via HTTP was been implemented with two common workarounds: polling and, more recently, WebSockets. HTTP was not built for efficient messaging, which is the scenario that we are after in IoT scenarios. On the other hand, AMQP has been built to enable efficient transmission of many payloads of small sizes. For technical details about AMQP, see Clemens Vasters webscast series <a href="http://m.youtube.com/watch?v=ODpeIdUdClc">HERE</a>.</p>
+
+<p>Support for AMQP is not mainstream as with HTTP. The following slide, presented during Integrate, shows you the availability of protocol SDKs and APIs across different stacks. This should make the selection of the right transmission protocol straight-forward.</p>
+
+<figure class="kg-card kg-image-card"><img src="/content/images/2019/04/image-4.png" class="kg-image" /></figure>
+
+<p>So what if you are programming on a stack that does not have an AMQP implementation available? This happened to me while working on an iPhone app that transmitted about 1 event per second to an Azure Event Hub. Making an HTTP post per event every second is tremendously expensive, ineffective and murders the battery of the device. Yet, as of the time of this writing, there is no AMQP library for Obj-C or Swift that can be used with Azure Event Hubs or IoT Hub. Luckily for us, Event Hubs allows you to batch events. So if you don’t require real time streaming of data from your devices, this is a convenient solution to this problem. My solution to the problem consisted on:</p>
+
+<ul>
+  <li>Implement the telemetry generator as an Observable sequence (using <a href="http://reactivex.io/">Reactive X</a> extensions).</li>
+  <li>Each time the observable fires an event, append that event into a static array.</li>
+  <li>Fire off an event when the length of the event equals 100 (this is an arbitrary number).</li>
+  <li>Copy the first 100 elements from the array into a new array, serialize those array elements and post them to Event Hubs as a batch HTTP request.</li>
+  <li>If the request is successful, delete the first 100 elements from the original array (since we transmitted them already, I don’t need them in the app anymore).</li>
+  <li>If the network transaction fails, you don’t delete the items in the array and their transmission will be retried later.</li>
+</ul>
+
+<p>This solution is very effective and clean to implement using Observables. Observable extensions are available in many different languages and I encourage you to look at this approach.</p>
+
+:ET

@@ -1,0 +1,2 @@
+I""<p>One of the first questions that pops up during our IoT engagements is: <em>how should we serialise messages from our IoT devices?</em> Althoughnobody has ever questioned serializing messages using a JSON structure, it is not always clear what schema those JSON messages should take.</p>
+:ET

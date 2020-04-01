@@ -1,0 +1,38 @@
+I"�
+<p><em>Please do yourself a favor and try to always work with IoT Hub’s client SDK’s.</em></p>
+
+<p>However, if for some reason you are forced to work with the REST endpoints, here is a tip to include custom message properties into your IoT Hub messages.</p>
+
+<h2 id="how-to-add-custom-message-properties">How to add custom message properties</h2>
+
+<p>To send device-to-cloud (D2C) messages to IoT Hub via the HTTP REST endpoint, you need to POST to the <code class="highlighter-rouge">http://{your_iothub_fqdn}/devices/{device_id}/events/messages</code> endpoint.</p>
+
+<p>To add a custom header, simply add an HTTP header prefixed with <code class="highlighter-rouge">iot-app-</code>.</p>
+
+<p><strong>Sample request:</strong></p>
+
+<figure class="kg-card kg-image-card"><img src="https://cdn-images-1.medium.com/max/1600/1*O-PWO8QBGZPZZ0kF2dhyIg.png" class="kg-image" /></figure>
+
+<p><strong>Output</strong></p>
+
+<figure class="kg-card kg-image-card"><img src="https://cdn-images-1.medium.com/max/1600/1*hM_82MHSdGbOmQLko9OoZQ.png" class="kg-image" /></figure>
+
+<p>You will find the custom properties in the <code class="highlighter-rouge">applicationProperties</code> property of the IoT Hub message.</p>
+
+<p><strong>Why are message properties useful?</strong></p>
+
+<p>When you send a message to IoT Hub, in principle, what you are sending is a byte array of information. Sometimes you need to add properties to your messages to facilitate processing. For instance, you might want to tag a message as being an <code class="highlighter-rouge">alarm</code>, and such messages will get treated with priority. If you are sending your messages in plain JSON, you could simply stick that additional property in the JSON body. But maybe you don’t want to do that, because:</p>
+
+<ol>
+  <li>You don’t want to “pollute” your messages with additional properties, which by nature, don’t belong in the message body.</li>
+  <li>You don’t want to unwrap the message to read these properties (that slows the ingestion pipeline down).</li>
+  <li>You can’t add such properties to the message because you are not sending JSON to IoT Hub (you might be sending compressed payloads, batched messages, Avro-encoded messages, XML, or raw byte arrays).</li>
+</ol>
+
+<p>Another use case for properties is the use of IoT Hub routing rules. Although IoT Hub recently added the possibility of making routing decisions based on the message’s body, we don’t advise customers to do this for the following reasons:</p>
+
+<ol>
+  <li>This forces IoT Hub to deserialize your payload, which adds latency to the message ingestion process.</li>
+  <li>This won’t work unless your messages are all serialized in plain JSON.</li>
+</ol>
+:ET

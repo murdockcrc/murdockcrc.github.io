@@ -1,0 +1,66 @@
+I" <p>During //Build, Microsoft <a href="https://techcrunch.com/2017/05/10/with-cosmos-db-microsoft-wants-to-build-one-database-to-rule-them-all/">surprised the market</a> with the CosmosDb announcement. With the announcement, Microsoft made some very bold statements about the service, particularly about scalability and performance. I was particularly curious about the sub-10-millisecond write performance promised at the 99th percentile, which also included the indexing overhead on writes (see more about this <a href="https://azure.microsoft.com/en-us/blog/a-technical-overview-of-azure-cosmos-db/">HERE</a>).</p>
+
+<p>At Codit, we are regularly engaged in customer IoT projects. By nature, IoT projects generate vasts amounts of data that need to be quickly ingested and stored. So with this in mind, I wanted to test how CosmosDb behaves when it needs to ingests large batches of historical observations.</p>
+
+<h3 id="the-data-set">The data set</h3>
+
+<p>To run the experiment, I used the historical flight data available <a href="https://www.transtats.bts.gov/airports.asp">HERE</a>. The data model includes about 110 columns, out of which I picked the first 50 columns. I got about 5Gb of data comprised of millions of these rows. Each row is about 1725 bytes in size.</p>
+
+<h3 id="the-cosmosdb-setup">The CosmosDb setup</h3>
+
+<p>Since the experiment data is tabular in nature, I created a Table API database with one collection called <em>flights</em>.</p>
+
+<p>Next, I wrote a C# program that would read the csv files from the dataset (each one is about 200Mb) and created a <em>TableEntity</em> using the <em>DynamicTableEntity</em> approach. I then grouped all rows based on their airport’s IATA code, which I decided to use as the <em>PartitionKey</em> for this experiment. Finally, the program creates insert batches of length 100 for every group of rows belonging to the same airport code. The program then takes each of these insertion batches (remember, each batch has up to 100 rows to insert) and executes them <strong>sequentially</strong>.</p>
+
+<p>To reduce network latency, I provisioned an Azure VM in the same region as the CosmosDb (North Europe) and gave it a generous amount of RAM (12Gb) so it could load all the data set in memory (the program I wrote is not optimized to reduce memory consumption).</p>
+
+<h3 id="the-result">The result</h3>
+
+<ol>
+  <li>Overall, the program created 19005 insert batches, most of them holding 100 rows to insert.</li>
+  <li>The program managed to execute 4–5 batches per second. This means it managed to insert about 400–500 rows/s. This is about 860KB/s throughput.</li>
+  <li>The 96th percentile for batch insertion time (remember, we are talking about insertion of a batch that includes 100 rows, not about inserting individual rows) was <strong>283ms</strong>.</li>
+</ol>
+
+<h3 id="takeaway">Takeaway</h3>
+
+<ul>
+  <li>With this experiment, I managed to hit 429 errors <strong>very quickly</strong>. At the end, I needed to increase the RU/s to 10’000. But most importantly, I needed to change the indexing policy from <em>consistent</em> to <em>lazy.</em> With the amount of data I was trying to load, I was not able to avoid 429 errors (RequestTooLarge) with a <em>consistent</em> indexing policy, not even when using 10’000 RU/s.</li>
+  <li>Write performance is excellent, as you can see from the result above. Even when using <em>consistent</em> indexing policy, the write performance of the batches was very high (when you don’t get throttled).</li>
+  <li>As typical for a v1 product, there are some inconsistencies between the service documentation and the actual APIs. For example, the <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/tutorial-develop-table-dotnet#insert-a-batch-of-entities">documentation</a> states that CosmosDb is not limited to the 100 rows/insert batch as Azure Table storage is. However, when building insertion batches with more than 100 entities, the program throws an exception: <code class="highlighter-rouge">The maximum number of operations allowed in one batch has been exceeded</code>, even though I am using the new <code class="highlighter-rouge">WindowsAzure.Storage-PremiumTable </code>library. I guess this new library is not updated. I did not try to insert batches using the REST API directly (the documentation only talks about working with .NET, there is no REST reference for the TableDB API).</li>
+</ul>
+
+<p>I think the key takeaway for me is that, when designing a large-scale system with CosmosDb, you will have to be <strong>extremely diligent</strong> on calculating how much capacity the system will need to offer, and its corresponding cost trade-off. Getting large write throughput on this database seems to be expensive. On the other hands, I ran the same loading job against the traditional Azure Table Storage service, and I never got throttled at all. In summary, I can derive the following learnings:</p>
+
+<ol>
+  <li>The performance of individual writes of CosmosDb is excellent.</li>
+  <li>Getting high write throughput with consistent indexing is <strong>significantly more expensive</strong> on CosmosDb than Table Storage. Table Storage will give you way more throughput for less money.</li>
+  <li>You should carefully optimize your CosmosDb index. Although the database advertises that everything is indexed by default (which is a great engineering feat, no question about it), the overhead of indexing everything is going to cost you money, especially if your data model is large.</li>
+  <li>CosmosDb Table API effectively supports secondary indexes, whereas Table Storage only supports <em>PartitionKey-RowKey</em> indexing. This is a big advantage for CosmosDb when you need to run more complex queries.</li>
+</ol>
+
+<h3 id="resources">Resources</h3>
+
+<p>Here is the code I used to load the CSV files into CosmosDb. The code is light based on the Microsoft sample:</p>
+
+<p><a href="https://github.com/murdockcrc/CosmosDbDataLoader">https://github.com/murdockcrc/CosmosDbDataLoader</a></p>
+
+<p>Here is the link to one of those CSV files:</p>
+
+<p><a href="https://luisdellab.blob.core.windows.net/flightdata/On_Time_On_Time_Performance_2014_1.csv">https://luisdellab.blob.core.windows.net/flightdata/On_Time_On_Time_Performance_2014_1.csv</a></p>
+
+<p><em>With contribution from</em> <a href="https://twitter.com/TomKerkhove"><em>Tom Kerkhove</em></a></p>
+
+<h3 id="update">Update</h3>
+
+<p>With some time in my hands, I refactored the code to execute the insert batches in parallel and do a more detailed write throughput comparison with the standard Azure Table Storage Table. In the refactoring I also decided to pick only 20 columns of the data set, and deserialize them a proper class to get the correct data types (instead of having them all as string). The conclusions don’t change, but I can offer now additional hard facts.</p>
+
+<p>In the following screenshots, you’ll see rows with three values: the first value is the timestamp of the row insertion batch (remember, each batch contains up to 100 rows), the second value is the ellapsed time for inserting the batches in milliseconds, and the last value is the total amount of rows inserted.</p>
+
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://cdn-images-1.medium.com/max/1600/1*SRD6Za3gENAJTUwKIeVlQg.png" class="kg-image" /><figcaption><em>Azure Table storage, 10 parallel batches of 100 rows per batch</em></figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2019/04/image-1.png" class="kg-image" /><figcaption>CosmosDb, 10 parallel insert batches of 100 rows per batch, consistent indexing, 10KRU/s. Basically useless, no request succeeds</figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2019/04/image-2.png" class="kg-image" /><figcaption>CosmosDb, 10 parallel batches of 100 rows per batch, lazy indexing, 5K RU/s</figcaption></figure>
+
+<p>You can see that the write performance of CosmosDb is much better than that of Azure Table storage (just compare the batches with 1000 records, many of them hover around 100ms). That is, when you don’t get throttled.</p>
+
+:ET
