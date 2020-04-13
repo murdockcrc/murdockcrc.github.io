@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-12T12:51:16+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Luis Delgado Blog</title><subtitle>Digitalization | Cloud | Innovation. Luis Delgado, CTO Option 4.0 AG</subtitle><entry><title type="html">The future of mobility is electric, but it’s not your beloved Tesla</title><link href="http://localhost:4000/2020/01/18/the-future-of-mobility-is-electric-but-its-not-your-beloved-tesla-2.html" rel="alternate" type="text/html" title="The future of mobility is electric, but it’s not your beloved Tesla" /><published>2020-01-18T20:37:12+01:00</published><updated>2020-01-18T20:37:12+01:00</updated><id>http://localhost:4000/2020/01/18/the-future-of-mobility-is-electric-but-its-not-your-beloved-tesla-2</id><content type="html" xml:base="http://localhost:4000/2020/01/18/the-future-of-mobility-is-electric-but-its-not-your-beloved-tesla-2.html">&lt;p&gt;Electric vehicles are &lt;a href=&quot;https://money.usnews.com/investing/news/articles/2020-01-13/more-than-400-000-german-jobs-at-risk-in-switch-to-electric-cars-handelsblatt&quot;&gt;disrupting the car industry&lt;/a&gt;. There is no doubt about this. They have fewer mechanical parts than their combustion engine counterparts. They don’t produce gas emissions. They are quieter. They give their owners the satisfactory feeling of being more environmentally friendly (whether that is indeed the case is heavily disputed, but let’s assume it’s true).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-13T21:58:38+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Luis Delgado Blog</title><subtitle>Digitalization | Cloud | Innovation. Luis Delgado, CTO Option 4.0 AG</subtitle><entry><title type="html">Develeraging the supply chain and reducing the fragility of globalisation</title><link href="http://localhost:4000/2020/03/13/globalization-fragility.html" rel="alternate" type="text/html" title="Develeraging the supply chain and reducing the fragility of globalisation" /><published>2020-03-13T00:00:00+01:00</published><updated>2020-03-13T00:00:00+01:00</updated><id>http://localhost:4000/2020/03/13/globalization-fragility</id><content type="html" xml:base="http://localhost:4000/2020/03/13/globalization-fragility.html">&lt;p&gt;&lt;em&gt;Through off-shoring, the relentless pursuit for profit has created an unacceptable amount of systemic risk in our societies.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/content/images/2020/03/abyss-3.jpg&quot; alt=&quot;&quot; class=&quot;wrapper&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The phenomenon knows as &lt;em&gt;Globalization&lt;/em&gt; accelerated and picked up pace during the 1990’s. Large corporations were finally able to deploy their capital anywhere in the world. Accelerated by international commercial treaties, de-regulation, low oil prices and support from political elites, multi-national companies started branching out of their home turfs and venturing towards towards developing nations.&lt;/p&gt;
+
+&lt;p&gt;Across boardrooms and senior executive teams, the idea of &lt;em&gt;cost reduction&lt;/em&gt; took hold with fervor. Firms started off-shoring some of their most crucial activities, in particular manufacturing. With the reliability of industrial automation, you could produce the same goods, at (almost) the same quality anywhere in the world. Manufacturing labor started moving outwards to countries whose cost structure was much more attractive.&lt;/p&gt;
+
+&lt;p&gt;Developing nations were armed with cheap labor and hungry for foreign investment. Developed countries were armed with capital, intellectual property, and an insatiable customer base. Off-shoring meant huge cost savings for industrial conglomerates. A massive shift took place, whereby companies invested capital in developing nations to build manufacturing facilities, brought their production know-how to far-away places, hired cheap labor, and scaled out production at a fraction of a cost compared to their home countries.&lt;/p&gt;
+
+&lt;p&gt;This massive shift in production required a fundamental re-architecting of the supply chain, which now required a global footprint. Raw materials needed to be procured and sent over to distant places. Transportation and logistics increased their complexity by orders of magnitude. Insurance had to play a more prominent role in protecting all those billions of dollars of materials and goods as they moved from one side of the world to the next one. Complex distribution chains had to be built for this purpose.&lt;/p&gt;
+
+&lt;p&gt;The formula proved to be successful. By putting the cost structure under pressure, profits increased. By producing at lower cost, goods were accessible to even more customers, thus increasing sales.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Lower production costs + more sales = higher stock prices and bonuses for the exec teams. Impossible to refuse&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Why produce textiles in Switzerland, when you could do it much cheaper in Honduras?
+Why manufacture in Germany, if you could do it cheaper in Thailand?
+Why pay the high salaries of “expensive” USA blue-collar workers, when Chinese workers could do the same job for much less?&lt;/p&gt;
+
+&lt;p&gt;The idea was executed wonderfully and was a win-win situation. Large multi-nationals could earn more money. The customers could have access to more and cheaper goods. Developing nations increased the employment of their workforce. Developed economies transfered some of their know-how and expertise to countries which did have it.&lt;/p&gt;
+
+&lt;p&gt;It all came crashing down with the Coronavirus.&lt;/p&gt;
+
+&lt;p&gt;The capacity of rich nations to produce tangible goods by themselves was severely dimished throughout the last three decades. In some industries, rich countries can’t even self-sufficiently produce some very essential goods. Rich, developed nations have become overly reliant on a global supply network which, when put under stress, can become dislocated and create social pressure in affected nations.&lt;/p&gt;
+
+&lt;p&gt;In their endless pursuit for profit, rich countries and their corporations have annihilated their ability to produce basic goods themselves:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.bloomberg.com/news/articles/2020-03-26/the-world-could-run-out-of-gloves-as-plants-curbed-in-lockdown&quot;&gt;60% of the world’s latex gloves are manufactured in Malaysia&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.reuters.com/article/us-china-usa-rareearth-refining-idUSKCN1T004J&quot;&gt;80% of rare earth demand is supplied by China&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.theguardian.com/technology/2011/oct/25/thailand-floods-hard-drive-shortage&quot;&gt;50% of the world’s hard drive supply comes from Thailand&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am not writing this to denounce globalisation or the off-shoring of labor in general. Quite the contrary, sometimes this is needed. In certain industries, countries cannot supply the demand for specific skillsets with in-country staff. Under such conditions, having access to a larger talent pool is crucial. But when the decision to off-shore is made purely on its benefit to financial bottomlines, then problems start. If the only driver for decision-making is money-making, you can be sure that &lt;a href=&quot;https://en.wikipedia.org/wiki/Irrational_exuberance&quot;&gt;excess and risk-taking will happen at industrial scale&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’d like to call this phenomenom the &lt;em&gt;leveraging of the supply chain&lt;/em&gt;. In finance, &lt;em&gt;leverage&lt;/em&gt; is the process whereby you take capital from someone else and invest it for your own profit. Like borrowing money from the bank and investing it in the stock market. When things are good, your returns on investments will be larger than the cost to service your debt, so you make a profit. So you borrow more money to achieve higher returns. But when things go bad and you start to lose money on the market, you have both a capital loss &lt;em&gt;and&lt;/em&gt; you need to pay your debt (plus interest). Leverage is a magnifier for both profits and losses.&lt;/p&gt;
+
+&lt;p&gt;This is the same phenomenon applied to manufacturing. When things go well, off-shoring increases your profits handsomely. But when the global supply chain is dislocated, the magnitude of these systemic shocks are more profound. As the Coronavirus crisis unfolds in the West, rich countries suddlenly found themselves in a very poor situation:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Unable to produce hand sanitizer by itself, Switzerland found some of its imports being &lt;a href=&quot;https://business.financialpost.com/pmn/business-pmn/swiss-retailer-gets-stiffed-as-hand-sanitizer-seized-at-italian-border&quot;&gt;confiscated by Italian customs authorities&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Unable to provide the most essential Personal Protection Equipment (PPE) to their health care staff, US personel are forced to improvise and use anything to protect themselves&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;I’m a physician at a hospital in NYC and THIS IS THE “PPE” I WAS JUST HANDED for my shift. Our federal government has completely failed its health care workers. &lt;a href=&quot;https://twitter.com/hashtag/GetUsPPE?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#GetUsPPE&lt;/a&gt; &lt;a href=&quot;https://t.co/bEh11ra7Ee&quot;&gt;pic.twitter.com/bEh11ra7Ee&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rachel Meislin, MD (@racheljulie) &lt;a href=&quot;https://twitter.com/racheljulie/status/1245114069339852802?ref_src=twsrc%5Etfw&quot;&gt;March 31, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;a href=&quot;https://www.bloomberg.com/news/videos/2020-03-27/supply-chain-collapsing-from-coronavirus-video&quot;&gt;food supply chain&lt;/a&gt; has been put at risk in many parts of the world.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Usually, financial crises are caused through some type of over leverage. In the same way, I believe that we have been leveraginng the supply chains too much and we should use its coronavirus-induced dislocation as a wakeup call to de-leverage it. For example, in the same way that anti-trust regulators intervene and block the sale/merger between companies when such a deal might compromise the benefits for consumers, governments and policymakers should also exercise veto power when a company’s off-shoring might put the national supply of some critical good or service at risk. Or governments might want to incentivize a company to keep some degree of local production, at least the bare minimum needed within a specific region.&lt;/p&gt;
+
+&lt;p&gt;This has to be done throuhg a framework of cooperation. The purpose here is not to push for &lt;em&gt;nationalisation&lt;/em&gt; or populism. What I strive to achieve here is to mitigate the risks that modern society is exposed to if most of the manufacturing capability of the world is concentrated in a few spots around the globe.&lt;/p&gt;</content><author><name></name></author><category term="careers" /><summary type="html">Through off-shoring, the relentless pursuit for profit has created an unacceptable amount of systemic risk in our societies.</summary></entry><entry><title type="html">The future of mobility is electric, but it’s not your beloved Tesla</title><link href="http://localhost:4000/2020/01/18/the-future-of-mobility-is-electric-but-its-not-your-beloved-tesla-2.html" rel="alternate" type="text/html" title="The future of mobility is electric, but it’s not your beloved Tesla" /><published>2020-01-18T20:37:12+01:00</published><updated>2020-01-18T20:37:12+01:00</updated><id>http://localhost:4000/2020/01/18/the-future-of-mobility-is-electric-but-its-not-your-beloved-tesla-2</id><content type="html" xml:base="http://localhost:4000/2020/01/18/the-future-of-mobility-is-electric-but-its-not-your-beloved-tesla-2.html">&lt;p&gt;Electric vehicles are &lt;a href=&quot;https://money.usnews.com/investing/news/articles/2020-01-13/more-than-400-000-german-jobs-at-risk-in-switch-to-electric-cars-handelsblatt&quot;&gt;disrupting the car industry&lt;/a&gt;. There is no doubt about this. They have fewer mechanical parts than their combustion engine counterparts. They don’t produce gas emissions. They are quieter. They give their owners the satisfactory feeling of being more environmentally friendly (whether that is indeed the case is heavily disputed, but let’s assume it’s true).&lt;/p&gt;
 
 &lt;p&gt;Yet, setting our hopes of modern, environmentally-friendly mobility on electric cars is not only insufficient, it is ultimately wrong.&lt;/p&gt;
 
@@ -1424,67 +1488,4 @@ namespace compress
 &lt;ol&gt;
   &lt;li&gt;This forces IoT Hub to deserialize your payload, which adds latency to the message ingestion process.&lt;/li&gt;
   &lt;li&gt;This won’t work unless your messages are all serialized in plain JSON.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="iot" /><summary type="html">Please do yourself a favor and try to always work with IoT Hub’s client SDK’s.</summary></entry><entry><title type="html">CosmosDb vs Table Storage: write throughput comparison</title><link href="http://localhost:4000/2017/06/01/cosmosdb-vs-table-storage-write-throughput-comparison.html" rel="alternate" type="text/html" title="CosmosDb vs Table Storage: write throughput comparison" /><published>2017-06-01T09:48:00+02:00</published><updated>2017-06-01T09:48:00+02:00</updated><id>http://localhost:4000/2017/06/01/cosmosdb-vs-table-storage-write-throughput-comparison</id><content type="html" xml:base="http://localhost:4000/2017/06/01/cosmosdb-vs-table-storage-write-throughput-comparison.html">&lt;p&gt;During //Build, Microsoft &lt;a href=&quot;https://techcrunch.com/2017/05/10/with-cosmos-db-microsoft-wants-to-build-one-database-to-rule-them-all/&quot;&gt;surprised the market&lt;/a&gt; with the CosmosDb announcement. With the announcement, Microsoft made some very bold statements about the service, particularly about scalability and performance. I was particularly curious about the sub-10-millisecond write performance promised at the 99th percentile, which also included the indexing overhead on writes (see more about this &lt;a href=&quot;https://azure.microsoft.com/en-us/blog/a-technical-overview-of-azure-cosmos-db/&quot;&gt;HERE&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;At Codit, we are regularly engaged in customer IoT projects. By nature, IoT projects generate vasts amounts of data that need to be quickly ingested and stored. So with this in mind, I wanted to test how CosmosDb behaves when it needs to ingests large batches of historical observations.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-data-set&quot;&gt;The data set&lt;/h3&gt;
-
-&lt;p&gt;To run the experiment, I used the historical flight data available &lt;a href=&quot;https://www.transtats.bts.gov/airports.asp&quot;&gt;HERE&lt;/a&gt;. The data model includes about 110 columns, out of which I picked the first 50 columns. I got about 5Gb of data comprised of millions of these rows. Each row is about 1725 bytes in size.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-cosmosdb-setup&quot;&gt;The CosmosDb setup&lt;/h3&gt;
-
-&lt;p&gt;Since the experiment data is tabular in nature, I created a Table API database with one collection called &lt;em&gt;flights&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Next, I wrote a C# program that would read the csv files from the dataset (each one is about 200Mb) and created a &lt;em&gt;TableEntity&lt;/em&gt; using the &lt;em&gt;DynamicTableEntity&lt;/em&gt; approach. I then grouped all rows based on their airport’s IATA code, which I decided to use as the &lt;em&gt;PartitionKey&lt;/em&gt; for this experiment. Finally, the program creates insert batches of length 100 for every group of rows belonging to the same airport code. The program then takes each of these insertion batches (remember, each batch has up to 100 rows to insert) and executes them &lt;strong&gt;sequentially&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;To reduce network latency, I provisioned an Azure VM in the same region as the CosmosDb (North Europe) and gave it a generous amount of RAM (12Gb) so it could load all the data set in memory (the program I wrote is not optimized to reduce memory consumption).&lt;/p&gt;
-
-&lt;h3 id=&quot;the-result&quot;&gt;The result&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Overall, the program created 19005 insert batches, most of them holding 100 rows to insert.&lt;/li&gt;
-  &lt;li&gt;The program managed to execute 4–5 batches per second. This means it managed to insert about 400–500 rows/s. This is about 860KB/s throughput.&lt;/li&gt;
-  &lt;li&gt;The 96th percentile for batch insertion time (remember, we are talking about insertion of a batch that includes 100 rows, not about inserting individual rows) was &lt;strong&gt;283ms&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;takeaway&quot;&gt;Takeaway&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;With this experiment, I managed to hit 429 errors &lt;strong&gt;very quickly&lt;/strong&gt;. At the end, I needed to increase the RU/s to 10’000. But most importantly, I needed to change the indexing policy from &lt;em&gt;consistent&lt;/em&gt; to &lt;em&gt;lazy.&lt;/em&gt; With the amount of data I was trying to load, I was not able to avoid 429 errors (RequestTooLarge) with a &lt;em&gt;consistent&lt;/em&gt; indexing policy, not even when using 10’000 RU/s.&lt;/li&gt;
-  &lt;li&gt;Write performance is excellent, as you can see from the result above. Even when using &lt;em&gt;consistent&lt;/em&gt; indexing policy, the write performance of the batches was very high (when you don’t get throttled).&lt;/li&gt;
-  &lt;li&gt;As typical for a v1 product, there are some inconsistencies between the service documentation and the actual APIs. For example, the &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/cosmos-db/tutorial-develop-table-dotnet#insert-a-batch-of-entities&quot;&gt;documentation&lt;/a&gt; states that CosmosDb is not limited to the 100 rows/insert batch as Azure Table storage is. However, when building insertion batches with more than 100 entities, the program throws an exception: &lt;code class=&quot;highlighter-rouge&quot;&gt;The maximum number of operations allowed in one batch has been exceeded&lt;/code&gt;, even though I am using the new &lt;code class=&quot;highlighter-rouge&quot;&gt;WindowsAzure.Storage-PremiumTable &lt;/code&gt;library. I guess this new library is not updated. I did not try to insert batches using the REST API directly (the documentation only talks about working with .NET, there is no REST reference for the TableDB API).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I think the key takeaway for me is that, when designing a large-scale system with CosmosDb, you will have to be &lt;strong&gt;extremely diligent&lt;/strong&gt; on calculating how much capacity the system will need to offer, and its corresponding cost trade-off. Getting large write throughput on this database seems to be expensive. On the other hands, I ran the same loading job against the traditional Azure Table Storage service, and I never got throttled at all. In summary, I can derive the following learnings:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;The performance of individual writes of CosmosDb is excellent.&lt;/li&gt;
-  &lt;li&gt;Getting high write throughput with consistent indexing is &lt;strong&gt;significantly more expensive&lt;/strong&gt; on CosmosDb than Table Storage. Table Storage will give you way more throughput for less money.&lt;/li&gt;
-  &lt;li&gt;You should carefully optimize your CosmosDb index. Although the database advertises that everything is indexed by default (which is a great engineering feat, no question about it), the overhead of indexing everything is going to cost you money, especially if your data model is large.&lt;/li&gt;
-  &lt;li&gt;CosmosDb Table API effectively supports secondary indexes, whereas Table Storage only supports &lt;em&gt;PartitionKey-RowKey&lt;/em&gt; indexing. This is a big advantage for CosmosDb when you need to run more complex queries.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
-
-&lt;p&gt;Here is the code I used to load the CSV files into CosmosDb. The code is light based on the Microsoft sample:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/murdockcrc/CosmosDbDataLoader&quot;&gt;https://github.com/murdockcrc/CosmosDbDataLoader&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is the link to one of those CSV files:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://luisdellab.blob.core.windows.net/flightdata/On_Time_On_Time_Performance_2014_1.csv&quot;&gt;https://luisdellab.blob.core.windows.net/flightdata/On_Time_On_Time_Performance_2014_1.csv&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;With contribution from&lt;/em&gt; &lt;a href=&quot;https://twitter.com/TomKerkhove&quot;&gt;&lt;em&gt;Tom Kerkhove&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;update&quot;&gt;Update&lt;/h3&gt;
-
-&lt;p&gt;With some time in my hands, I refactored the code to execute the insert batches in parallel and do a more detailed write throughput comparison with the standard Azure Table Storage Table. In the refactoring I also decided to pick only 20 columns of the data set, and deserialize them a proper class to get the correct data types (instead of having them all as string). The conclusions don’t change, but I can offer now additional hard facts.&lt;/p&gt;
-
-&lt;p&gt;In the following screenshots, you’ll see rows with three values: the first value is the timestamp of the row insertion batch (remember, each batch contains up to 100 rows), the second value is the ellapsed time for inserting the batches in milliseconds, and the last value is the total amount of rows inserted.&lt;/p&gt;
-
-&lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1600/1*SRD6Za3gENAJTUwKIeVlQg.png&quot; class=&quot;kg-image&quot; /&gt;&lt;figcaption&gt;&lt;em&gt;Azure Table storage, 10 parallel batches of 100 rows per batch&lt;/em&gt;&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;&lt;img src=&quot;/content/images/2019/04/image-1.png&quot; class=&quot;kg-image&quot; /&gt;&lt;figcaption&gt;CosmosDb, 10 parallel insert batches of 100 rows per batch, consistent indexing, 10KRU/s. Basically useless, no request succeeds&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;&lt;img src=&quot;/content/images/2019/04/image-2.png&quot; class=&quot;kg-image&quot; /&gt;&lt;figcaption&gt;CosmosDb, 10 parallel batches of 100 rows per batch, lazy indexing, 5K RU/s&lt;/figcaption&gt;&lt;/figure&gt;
-
-&lt;p&gt;You can see that the write performance of CosmosDb is much better than that of Azure Table storage (just compare the batches with 1000 records, many of them hover around 100ms). That is, when you don’t get throttled.&lt;/p&gt;</content><author><name></name></author><category term="azure" /><category term="cosmosdb" /><summary type="html">During //Build, Microsoft surprised the market with the CosmosDb announcement. With the announcement, Microsoft made some very bold statements about the service, particularly about scalability and performance. I was particularly curious about the sub-10-millisecond write performance promised at the 99th percentile, which also included the indexing overhead on writes (see more about this HERE).</summary></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><category term="iot" /><summary type="html">Please do yourself a favor and try to always work with IoT Hub’s client SDK’s.</summary></entry></feed>
