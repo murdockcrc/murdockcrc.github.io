@@ -8,7 +8,7 @@ tags:
 
 _Through off-shoring, the relentless pursuit for profit has created an unacceptable amount of systemic risk in our societies._
 
-![](/content/images/2020/03/abyss-3.jpg){: .wrapper }
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2020/03/abyss-3.jpg" class="kg-image"><figcaption>.</figcaption></figure>
 
 The phenomenon knows as _Globalization_ accelerated and picked up pace during the 1990's. Large corporations were finally able to deploy their capital anywhere in the world. Accelerated by international commercial treaties, de-regulation, low oil prices and support from political elites, multi-national companies started branching out of their home turfs and venturing towards towards developing nations.
 
