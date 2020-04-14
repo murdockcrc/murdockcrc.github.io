@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Develeraging the supply chain and reducing the fragility of globalisation'
+title: 'Deleveraging the supply chain and reducing the fragility of globalisation'
 date: '2020-03-13 00:00:00'
 tags:
 - careers
