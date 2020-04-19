@@ -2,6 +2,7 @@
 layout: post
 title: 'Deleveraging the supply chain and reducing the fragility of globalisation'
 date: '2020-03-13 00:00:00'
+summary: 'Through off-shoring, the relentless pursuit for profit has created an unacceptable amount of systemic risk in our societies'
 tags:
 - careers
 ---
@@ -57,3 +58,5 @@ https://twitter.com/racheljulie/status/1245114069339852802
 Usually, financial crises are caused through some type of over leverage. In the same way, I believe that we have been leveraging the supply chains too much and we should use its coronavirus-induced dislocation as a wakeup call to de-leverage it. For example, in the same way that anti-trust regulators intervene and block the sale/merger between companies when such a deal might compromise the benefits for consumers, governments and policymakers should also exercise veto power when a company's off-shoring might put the national supply of some critical good or service at risk. Or governments might want to incentivize a company to keep some degree of local production, at least the bare minimum needed within a specific region.
 
 This has to be done through a framework of cooperation. The purpose here is not to push for _nationalisation_ or populism. What I strive to achieve here is to mitigate the risks that modern society is exposed to if most of the manufacturing capability of the world is concentrated in a few spots around the globe.
+
+Update April 19th, 2020: Want to share this excellent piece written by [Marc Andreessen](https://a16z.com/2020/04/18/its-time-to-build/)
