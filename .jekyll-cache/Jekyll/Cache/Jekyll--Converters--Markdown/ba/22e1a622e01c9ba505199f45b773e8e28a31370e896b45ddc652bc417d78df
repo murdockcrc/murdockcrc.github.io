@@ -1,0 +1,50 @@
+I"�<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2020/04/world-collision.png" class="kg-image" /><figcaption>.</figcaption></figure>
+
+<p>Since 2 years ago, I’ve had the opportunity to work with data science teams in digitalization projects. I am not data scientist, so why have I been brought into these teams for?</p>
+
+<p>Most of the times, I’ve been brought into these teams as a bridge between the world of data science and the world of DevOps. The collaboration between those two teams is often full of friction, frustration, and conflict. Allow me to explain this with an illustration.</p>
+
+<h1 id="fitting-the-ds-team-into-software-development">Fitting the DS team into software development</h1>
+
+<p>Data science teams will typically work very independently from DevOps teams. They collaborate with domain experts for the field they are researching, but their data research is mostly conducted outside the scope of IT or software development teams. Eventually, the data science team finishes its job and they have a model which is ready to be operationalized (meaning it’s ready to be launched into production, either as a standard software service or embedded into another product). This step from “data science” to “software operations” can be quite tricky.</p>
+
+<p>Data science teams typically do not operate the software they produce, because they are not an operations team (this is especially true if their models need to be embedded into someone else’s product). But DevOps teams are usually very skeptical of this “throw over the fence approach”. Common reasons for DevOps teams to offer resistance are:</p>
+
+<ul>
+  <li>The software is not modular. As a software artifact, the code (typically Python) suffers from poor software architecture.</li>
+  <li>The data science team is not making proper use of security credentials and secret management.</li>
+  <li>The code has no consideration for cross-functional requirements, such as scalability, security, monitoring, logging, error handling, retry policies, amongst others.</li>
+</ul>
+
+<p>On the other hand, data science teams find the collaboration with external DevOps and IT teams quite frustrating too. Common reasons are:</p>
+
+<ul>
+  <li>Lack of support for common DS tooling. Particularly, IT departments are quite skeptical of having staff with unmanaged clients such as Macs or Linux devices, thus forcing the DS team to either a) use Windows PCs to do their work (which they hate) or b) enforcing a ton of security restrictions when using non-vetted computers (which makes the DS team unproductive).</li>
+  <li>Constant push-back from DevOps teams when they are trying to release their software (for the reasons mentioned earlier).</li>
+  <li>Lack of corporate support for the technology stack they prefer (such as exotic databases, obscure reporting tools or uncommon hosting choices). And when I say “exotic, obscure uncommon”, I mean that from the perspective of enterprise IT.</li>
+</ul>
+
+<p>Whatever camp you choose to support, I believe both perspectives are correct. DevOps teams’ critique on the software artifacts delivered by DS teams is typically true. But here is the first mismatch in expectations: Data scientists are data scientists. They are not software architects. They are not software security experts. They are not experts in designing distributed systems. They are not experts in operating software, so don’t expect them to produce code which solves your needs for logging, alerting and monitoring. Upon delivering a software artifact, they have done their job: they have done their science and their software artifacts reflect that outcome. Is that software ready to go into a production environment? Hell no. But this should not be the expectation towards them either.</p>
+
+<p>Similarly, data science teams should understand that their primary mandate towards the organization is to delivery science. As such, decisions like hosting runtimes, databases, security and such should not be their responsibility. This should be considered as a opportunity to focus on the team’s core strengths. As an example: more often that not, the answer from a DS team to operationalize a model is to “put the Python code in a AWS VM” or “put it in a container inside a Kubernetes cluster”. DS teams usually have the expectation that they own the product of their work, and as such, they should have the liberty to choose how to bring it into production, and should have free choice about the tech stack to use. This is also an expectation misalignment.</p>
+
+<h1 id="moving-to-a-collaborative-approach">Moving to a collaborative approach</h1>
+
+<p>The fundamental problem is a misalignment of expectations. DevOps teams expect DS software to be mature and ready for production. They expect for the software to be compatible for the corporate tech stack. They expect the software to have strong monitoring, logging, security and alerting. On the other hand, DS teams expect for them to have free-reign on the entire lifecycle of their solutions.</p>
+
+<p>The most effective way to bring data science into real-world products is to adopt a collaborative approach. Understand that data science does not work on a silo, but that it is rather one components of modern product development. Product Development is a multi-disciplinary effort, of which data science can be a part of. As such, instead of having separate data science teams, infrastructure teams, development teams and operations teams, your organization should take a product-centric approach instead. Software developers and architects should provide a consultative approach to data scientist, so that their software is born already adhering to best practices from the start. Similarly, security and infrastructure specialists should provide a consultative approach so that data scientist understand the security policies to access corporate resources (such as production databases), understand how to leverage company-wide secret management technology, and understand which key metrics the code must publish in order for the operations team to monitor it.</p>
+
+<p>Data science teams should be willing to let their baby go. A software architect from the company might rip the code apart and make it modular, so that it is easier to maintain, test and scale. This is fine, and as a data scientist, you should be happy that someone is bring software architecture maturity into your code. DS teams should stop fighting about putting everything into a VM. Operations teams and solutions architects are in a much better position to choose the correct runtime for the code (provided you explain to them the computational requirements or the models). Also, the operations team is probably right when they don’t let you use the cool-database-of-the-year to host your data. There are considerations such as backup and restore, logging and auditing, scale, support contracts (or lack thereof) which makes your favorite open source database not suitable for a production system inside your organization.</p>
+
+<h1 id="the-result">The result</h1>
+
+<p>In my experience working as a bridge between DS teams and DevOps teams, I’ve found that resetting expectations and putting a collaboration framework in place really helps. Friction and conflict are reduced, and time-to-market is accelerated. And overall, every benefits from a having more mature software:</p>
+
+<ul>
+  <li>Leveraging existing database and infrastructure assets makes DS teams faster, as they can leverage existing investments.</li>
+  <li>Putting DS code in source control makes collaboration between data scientists and software engineers more effective.</li>
+  <li>Bringing testing to DS code increases the reliability of the product.</li>
+  <li>Automating the building, testing, and release of DS code using DevOps tooling increases the productivity of the team and the reliability of the product.</li>
+  <li>Ultimately, the software evolves into something which the DevOps team feels confident they can operate within the constraints of a production environment.</li>
+</ul>
+:ET
