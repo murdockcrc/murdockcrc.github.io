@@ -7,7 +7,7 @@ tags:
 - AppStore
 - Apple
 - Monopoly
-published: false
+published: true
 ---
 
 <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2020/08/ww_app-store-badge_150909.png" class="kg-image"><figcaption>.</figcaption></figure>
