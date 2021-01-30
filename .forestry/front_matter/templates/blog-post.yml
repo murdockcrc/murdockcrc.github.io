@@ -14,3 +14,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- _posts/on-revising-our-expectation-towards-online-services.md
