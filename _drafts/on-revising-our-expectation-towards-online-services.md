@@ -1,5 +1,5 @@
 ---
-layout: Blog Post
+layout: post
 title: On revising our expectation towards online services
 date: 2021-01-29 23:00:00 +0000
 tags: []
