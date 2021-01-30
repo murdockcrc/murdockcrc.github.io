@@ -5,6 +5,8 @@ date: 2021-01-29 23:00:00 +0000
 tags: []
 
 ---
+![](https://cdn.hiptoro.com/wp-content/uploads/2019/04/WhatsApp-dark-mode.jpg)
+
 I pay Microsoft USD 99 per year for email services for my family members.
 
 I pay YouTube (Google) 20 bucks / month for YouTube music and ad-free YouTube (one of the biggest upgrades in my life was shutting down ads in YT).
