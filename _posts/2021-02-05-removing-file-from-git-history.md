@@ -23,3 +23,13 @@ Entirely removing a file requires you to rewrite the repo's history since the ti
 git filter-branch --index-filter "git rm --cached --ignore-unmatch 'path/largevideo.mp4'"
 
 ```
+
+You have now removed the file from your local history.
+
+If you `git pull` now, you will get the file again, as it still lives in the Git history in the server. We now need to remove the file from the server's Git history:
+
+```
+git push --force
+```
+
+Other team members must now pull from the server, as their histories are now different and they won't be able to push.
