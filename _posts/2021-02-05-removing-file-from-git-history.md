@@ -32,4 +32,4 @@ If you `git pull` now, you will get the file again, as it still lives in the Git
 git push --force
 ```
 
-Other team members must now pull from the server, as their histories are now different and they won't be able to push.
+Other team members must now pull from the server, as their local history is now different and they won't be able to push.
