@@ -18,8 +18,8 @@ Removing the file from the repo and creating a new commit will remove the file f
 
 Entirely removing a file requires you to rewrite the repo's history since the time that file was written into it.
 
-\`\`\`
+```
 
-git filter-branch --index-filter "git rm --cached --ignore-unmatch 'path/margevideo.'"
+git filter-branch --index-filter "git rm --cached --ignore-unmatch 'path/largevideo.mp4'"
 
-\`\`\`
+```
