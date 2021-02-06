@@ -16,3 +16,4 @@ fields:
   label: tags
 pages:
 - _posts/2021-01-29-on-revising-our-expectation-towards-online-services.md
+- _posts/removing-file-from-git-history.md
