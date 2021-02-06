@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: post
 title: Removing file from Git history
 date: 2021-02-05 23:00:00 +0000
 tags: []
