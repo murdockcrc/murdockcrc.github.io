@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: post
 title: Windows 11 is a game changer
 date: 2021-07-17 22:00:00 +0000
 tags: []
