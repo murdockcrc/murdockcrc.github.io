@@ -34,3 +34,26 @@ Performance is on par with Win10. I do not see an improvement or deterioration o
 # Battery Life
 
 Bat life has been the same as on Win10. I was expecting to see better battery life, given optimizations in CPU/GPU and memory management. However, this might materialize later in future builds.
+
+Start Menu
+
+This is one of the items that took the most hate after the screenshot leaks. The start menu at the center makes sense. It fits into the design language of the OS and I would not have it any other way.
+
+The start menu itself it better looking that its Win10 counterpart, but it is still as useless as before. All those "pinned" apps on the top do not help on making me more productive:
+
+![](/uploads/screenshot-2021-07-18-075303.png)
+
+You don't need any of this. If you are looking for an app, it's much faster to simply:
+
+* Press the Windows key on the keyboard
+* Start typing the name of the app you are looking for
+* Select the app from the result
+
+![](/uploads/screenshot-2021-07-18-075502.png)
+
+This feature is not new to Windows 11, but the search results on Win10 were notoriously poor. I find the search results in Win11 are now much more relevant.
+
+The _Recommended_ section of the Start Menu does seem helpful to me, as Windows recognizes the last files/documents you can interacted with and displays them in that menu. This is convenient and increases productivity.
+
+Another feature which works well is the search, which you can activate by pressing Alt + Spacebar on your keyboard. This is also not a new feature of Win11, you can do this in Win10 too. True, it's a copy of Mac's Spotlight search, but it works really well and in my opinion, it could completely replace the need for a Start Menu at all:  
+![](/uploads/screenshot-2021-07-18-075932.png)
